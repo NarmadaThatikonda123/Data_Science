@@ -78,6 +78,42 @@ Choosing the right performance metrics is vital to evaluate how well the model m
   - **Definition:** Represents the likelihood that the model ranks a random positive instance higher than a random negative one.
   - **Use Case:** Useful for evaluating models at various threshold settings.
 
+#### 3.1.2 Multi-class Classification
+
+- **Micro F1 Score**
+  - **Definition:** Calculates metrics globally by counting the total true positives, false negatives, and false positives.
+  - **Use Case:** Useful when you want to evaluate overall performance across all classes.
+
+- **Macro F1 Score**
+  - **Definition:** Calculates metrics for each class independently and then takes the average.
+  - **Use Case:** Treats all classes equally, useful when classes are imbalanced.
+
+### 3.2 Regression
+
+- **RMSE (Root Mean Square Error)**
+  - **Definition:** The square root of the average squared differences between predicted and actual values.
+  - **Use Case:** Provides a measure of the model's prediction error in the same units as the target variable.
+
+- **MSE (Mean Square Error)**
+  - **Definition:** The average of the squared differences between predicted and actual values.
+  - **Use Case:** Penalizes larger errors more than smaller ones.
+
+- **R² (Coefficient of Determination)**
+  - **Definition:** Indicates the proportion of the variance in the dependent variable that is predictable from the independent variables.
+  - **Use Case:** Values range from 0 to 1, with higher values indicating better model performance.
+
+- **Adjusted R²**
+  - **Definition:** Modified version of R² that adjusts for the number of predictors in the model.
+  - **Use Case:** Prevents overestimation of model performance when adding more variables.
+
+- **Mean Absolute Error (MAE)**
+  - **Definition:** The average of the absolute differences between predicted and actual values.
+  - **Use Case:** Provides a straightforward interpretation of average error magnitude.
+
+- **Mean Absolute Percentage Error (MAPE)**
+  - **Definition:** Measures the accuracy of a forecasting method as a percentage.
+  - **Use Case:** Useful for understanding the size of the error in percentage terms.
+
 ---
 
 ## 4. Scenario Prioritization
